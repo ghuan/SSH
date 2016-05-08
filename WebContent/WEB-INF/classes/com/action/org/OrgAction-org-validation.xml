@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN" 
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<!-- 字段校验配置方式 -->
+	<!--<field name="org.zfbz">
+		<field-validator type="int">
+			<param name="min">10</param>
+			<param name="max">20</param>
+			<message>中文试试看</message>
+		</field-validator>
+	</field>-->
+	<!-- 非字段校验配置方式 -->
+	<validator type="int">
+		<param name="fieldName">org.zfbz</param>
+		<param name="min">10</param>
+		<param name="max">20</param>
+		<message>中文试试看</message>
+	</validator>
+	<validator type="requiredstring">
+		<param name="fieldName">org.orgName</param>
+		<message>不能为空</message>
+	</validator>
+	<validator type="stringlength">
+		<param name="fieldName">org.orgName</param>
+		<param name="minLength">4</param>
+		<param name="maxLength">9</param>
+		<message>长度${minLength}-${maxLength}</message>
+	</validator>
+	<validator type="date">
+		<param name="fieldName">org.bz</param>
+		<param name="min">1999-11-11</param>
+		<param name="max">2000-11-11</param>
+		<message>日期</message>
+	</validator>
+	<validator type="email">
+		<param name="fieldName">org.email</param>
+		<message>邮箱</message>
+	</validator>
+</validators>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--制定Struts.xml文件的根元素 -->
+<struts>
+	<!--配置包，包名为default，该包继承了Struts2框架的默认包struts-default -->
+	<package name="default" namespace="/info" extends="struts-default">
+		<!--定义名为hello的action，该action的处理类为com.action.TestAction，并映射到success.jsp页面 -->
+		<action name="hello" class="com.action.TestAction">
+			<result>/success.jsp</result>
+		</action>
+		<action name="org" class="com.action.org.OrgAction">
+			<result>/success2.jsp</result>
+			<result name="input">/validate.jsp</result>
+		</action>
+		<action name="orgw" class="com.action.org.OrgAction">
+			<result>/success3.jsp</result>
+			<result name="input">/validate.jsp</result>
+		</action>
+	</package>
+</struts>
