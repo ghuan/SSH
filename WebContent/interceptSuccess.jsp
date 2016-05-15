@@ -8,13 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<s:form action="org" namespace="/info">
-  用户名：<s:textfield name="org.orgName"/><br/>  
-    密码：<s:textfield name="org.bz"/><br/>  
-    手机版：<s:textfield name="org.zfbz"/><br/>  
-    <s:textfield name="org.email"/><br/>  
-
-<s:submit></s:submit>
-</s:form>
+SUCCESS
 </body>
 </html>

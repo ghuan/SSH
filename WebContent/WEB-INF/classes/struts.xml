@@ -4,6 +4,8 @@
 	"http://struts.apache.org/dtds/struts-2.0.dtd">
 <!--制定Struts.xml文件的根元素 -->
 <struts>
+	
+	<include file="interceptor1.xml"/>
 	<!--配置包，包名为default，该包继承了Struts2框架的默认包struts-default -->
 	<package name="default" namespace="/info" extends="struts-default">
 		<!--定义名为hello的action，该action的处理类为com.action.TestAction，并映射到success.jsp页面 -->

@@ -12,5 +12,7 @@
 ${org.orgName}
 ${org.bz}
 ${org.zfbz}
-</body>
+<s:actionerror/>
+<s:actionmessage/>
+<s:fielderror/>
 </html>
