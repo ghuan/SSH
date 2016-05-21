@@ -37,5 +37,8 @@
 			</interceptor-ref>
 			<result>/interceptSuccess.jsp</result>
 		</action>
+		<action name="login" class="com.action.LoginAction">
+			<result>/loginSuccess.jsp</result>
+		</action>
 	</package>
 </struts>
